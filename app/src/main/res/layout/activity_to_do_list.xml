@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    tools:context=".ToDoList">
+
+    <!--    backIcon-->
+    <LinearLayout
+        android:id="@+id/Back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:padding="20dp"
+            android:src="@drawable/ic_baseline_west_24"/>
+
+        <TextView
+            android:id="@+id/profie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dp"
+            android:layout_marginLeft="40dp"
+            android:text="Profie Home"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+    <!--   End backIcon-->
+
+    <!--   1st_line_End-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/profie2"-->
+<!--        android:layout_below="@+id/Back"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:gravity="center"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/profile"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="40dp"-->
+<!--            android:layout_marginRight="0dp"-->
+<!--            android:layout_marginBottom="20dp"-->
+<!--            android:gravity="left"-->
+<!--            android:text="To-Do List"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="30dp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--    </LinearLayout>-->
+    <!--        1st_line_End-->
+
+    <LinearLayout
+        android:layout_below="@+id/Back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_marginTop="10dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerview"
+            android:layout_above="@id/addnewnotebtn"
+            android:layout_below="@id/profile"/>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add new note"
+        android:id="@+id/addnewnotebtn"
+        android:textColor="#00B0FF"
+        android:backgroundTint="@color/white"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

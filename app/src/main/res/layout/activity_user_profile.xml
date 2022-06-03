@@ -24,6 +24,7 @@
     </LinearLayout>
 <!--   End backIcon-->
 
+<!--   1st_line_End-->
     <LinearLayout
         android:id="@+id/profie"
         android:layout_below="@+id/Back"
@@ -50,7 +51,7 @@
     </LinearLayout>
     <!--        1st_line_End-->
 
-<!--    textFeild-->
+<!--    2nd line______textFeild-->
     <LinearLayout
         android:layout_below="@+id/profie"
         android:layout_width="match_parent"
@@ -79,7 +80,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/email"
-            android:hint="Emaill"
+            android:hint="Email"
             android:layout_marginBottom="10dp">
 
             <com.google.android.material.textfield.TextInputEditText
