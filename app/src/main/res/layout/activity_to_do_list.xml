@@ -30,7 +30,7 @@
             android:gravity="center"
             android:padding="15dp"
             android:layout_marginLeft="40dp"
-            android:text="Profie Home"
+            android:text="To-Do LIST"
             android:textColor="@color/white"
             android:textSize="30dp"
             android:textStyle="bold"/>

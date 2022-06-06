@@ -33,6 +33,7 @@ public class AddNote extends AppCompatActivity {
 
         EditText descriptionInput = findViewById(R.id.descriptioninput);
         MaterialButton saveBtn = findViewById(R.id.savebtn);
+        MaterialButton addloc = findViewById(R.id.addlocation);
 
 
         Realm.init(getApplicationContext());
@@ -57,5 +58,16 @@ public class AddNote extends AppCompatActivity {
 
             }
         });
+
+        addloc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(AddNote.this,ToDoListLocation.class));
+
+            }
+        });
+
+
     }
 }
