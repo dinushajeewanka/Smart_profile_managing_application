@@ -45,29 +45,26 @@ public class Home extends AppCompatActivity {
 
         Profileimg.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                startActivity(new Intent(Home.this,ToDoList.class));
+            public void onClick(View v) {startActivity(new Intent(Home.this,SetProfile.class));
             }
         });
 
         ProfileTxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Home.this,ToDoList.class));
+                startActivity(new Intent(Home.this,SetProfile.class));
             }
         });
 
         GoogleCimg.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                startActivity(new Intent(Home.this,ToDoList.class));
+            public void onClick(View v) {startActivity(new Intent(Home.this,GoogleCalendar.class));
             }
         });
 
         GoogleCTxt.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                startActivity(new Intent(Home.this,ToDoList.class));
+            public void onClick(View v) {startActivity(new Intent(Home.this,GoogleCalendar.class));
             }
         });
 

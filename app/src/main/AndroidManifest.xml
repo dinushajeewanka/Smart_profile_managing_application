@@ -3,10 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.smartprofilemanagingapplication">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -18,9 +17,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartProfileManagingApplication"
         tools:targetApi="31">
+        <activity
+            android:name=".GoogleCalendar"
+            android:exported="false" />
+        <activity
+            android:name=".SetProfileLocation"
+            android:exported="false" />
+        <activity
+            android:name=".SetProfile"
+            android:exported="false" />
 
-        <meta-data android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyD9MCIkBvEQCjj9CP_UOZ-TXBi293bclDg"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD9MCIkBvEQCjj9CP_UOZ-TXBi293bclDg" />
 
         <activity
             android:name=".ToDoListLocation"
@@ -30,7 +39,7 @@
             android:exported="false" />
         <activity
             android:name=".ToDoList"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".UserProfile"
             android:exported="false" />
