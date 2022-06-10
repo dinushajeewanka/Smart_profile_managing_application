@@ -70,15 +70,13 @@ public class Home extends AppCompatActivity {
 
         Childimg.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                startActivity(new Intent(Home.this,ToDoList.class));
+            public void onClick(View v) {startActivity(new Intent(Home.this,ChuldProtection.class));
             }
         });
 
         childTxt.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                startActivity(new Intent(Home.this,ToDoList.class));
+            public void onClick(View v) {startActivity(new Intent(Home.this,ChuldProtection.class));
             }
         });
 

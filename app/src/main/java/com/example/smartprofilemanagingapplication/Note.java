@@ -23,8 +23,7 @@ public class Note extends RealmObject {
         this.description = description;
     }
 
-    public long getCreatedTime() {
-        return createdTime;
+    public long getCreatedTime() {return createdTime;
     }
 
     public void setCreatedTime(long createdTime) {

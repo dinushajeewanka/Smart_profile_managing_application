@@ -18,6 +18,12 @@
         android:theme="@style/Theme.SmartProfileManagingApplication"
         tools:targetApi="31">
         <activity
+            android:name=".AddChildProtect"
+            android:exported="false" />
+        <activity
+            android:name=".ChuldProtection"
+            android:exported="false" />
+        <activity
             android:name=".GoogleCalendar"
             android:exported="false" />
         <activity
