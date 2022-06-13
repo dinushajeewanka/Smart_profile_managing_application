@@ -19,6 +19,15 @@ public class AddChildProtect extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_child_protect);
 
+        MaterialButton socialM = findViewById(R.id.socalMedia);
+
+        socialM.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(AddChildProtect.this,ProtectionPassword.class));
+            }
+        });
+
 //        EditText titleInput = findViewById(R.id.titleinput);
 //
 //        EditText descriptionInput = findViewById(R.id.descriptioninput);

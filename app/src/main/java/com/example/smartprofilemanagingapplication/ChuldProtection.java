@@ -21,15 +21,15 @@ public class ChuldProtection extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chuld_protection);
-//
-//            MaterialButton addNoteBtn = findViewById(R.id.addnewnotebtn);
-//
-//            addNoteBtn.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//                    startActivity(new Intent(ChuldProtection.this,AddChildProtect.class));
-//                }
-//            });
+
+            MaterialButton addNoteBtn = findViewById(R.id.addnewnotebtn);
+
+            addNoteBtn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    startActivity(new Intent(ChuldProtection.this,AddChildProtect.class));
+                }
+            });
 //
 //            Realm.init(getApplicationContext());
 //            Realm realm = Realm.getDefaultInstance();
