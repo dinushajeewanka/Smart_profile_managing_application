@@ -63,7 +63,7 @@
             android:id="@+id/titleoutput"
             android:textSize="20dp"
             android:textColor="@color/black"
-            tools:text="Class Science"/>
+            android:text="Science Class "/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -71,7 +71,7 @@
             android:layout_marginTop="5dp"
             android:layout_below="@id/titleoutput"
             android:textColor="#393939"
-            tools:text="0765464018"/>
+            android:text="0765464018"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -81,7 +81,7 @@
             android:textSize="12dp"
             android:gravity="end"
             android:textColor="#858484"
-            tools:text="June 10 2022 "/>
+            android:text="June 10 2022"/>
     </LinearLayout>
 
     <!--1st line end-->
@@ -103,7 +103,7 @@
             android:id="@+id/titleoutput1"
             android:textSize="20dp"
             android:textColor="@color/black"
-            tools:text="Class Mathes"/>
+            android:text="Mathes Class"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -111,7 +111,7 @@
             android:layout_marginTop="5dp"
             android:layout_below="@id/titleoutput"
             android:textColor="#393939"
-            tools:text="0775466999"/>
+            android:text="0775466999"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -121,7 +121,7 @@
             android:textSize="12dp"
             android:gravity="end"
             android:textColor="#858484"
-            tools:text="June 10 2022 "/>
+            android:text="June 10 2022 "/>
     </LinearLayout>
 
     <!--2nd line end-->

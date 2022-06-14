@@ -53,21 +53,35 @@
                 android:id="@+id/addlocation1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="40dp"
+                android:layout_marginTop="50dp"
                 android:gravity="center"
-                android:text="Add Location"
+                android:text="Add Location 1"
                 android:textColor="@color/white"
-                android:textSize="25dp"
+                android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/addlocationTxt1"
-                android:layout_width="300dp"
-                android:layout_height="200dp"
+            <Button
+                android:id="@+id/addlocation2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:gravity="center"
+                android:text="Add Location 2"
+                android:layout_marginTop="30dp"
                 android:textColor="@color/white"
-                android:textSize="30sp"
+                android:textSize="20dp"
                 android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/addlocation3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Add Location 3"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
         </LinearLayout>
 
 

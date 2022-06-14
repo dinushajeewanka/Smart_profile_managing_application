@@ -456,7 +456,7 @@
                 android:id="@+id/SetL"
                 android:text="Add Profie"
                 android:layout_gravity="center"
-                android:backgroundTint="@color/wallet_holo_blue_light"
+                android:backgroundTint="@color/holo_blue_light"
                 android:textColor="@color/black" />
 
         </LinearLayout>

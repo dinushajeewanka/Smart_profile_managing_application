@@ -3,6 +3,7 @@ package com.example.smartprofilemanagingapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -20,11 +21,23 @@ public class AddChildProtect extends AppCompatActivity {
         setContentView(R.layout.activity_add_child_protect);
 
         MaterialButton socialM = findViewById(R.id.socalMedia);
+        MaterialButton Addlocation = findViewById(R.id.addlocation);
 
         socialM.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(AddChildProtect.this,ProtectionPassword.class));
+            }
+        });
+
+        Addlocation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("geo:47.4925, 19.0513"));
+                Intent chooser = Intent.createChooser(intent, "Launch Map");
+                startActivity(chooser);
+
             }
         });
 

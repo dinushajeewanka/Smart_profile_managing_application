@@ -3,6 +3,7 @@ package com.example.smartprofilemanagingapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -26,37 +27,67 @@ public class SetProfile extends AppCompatActivity {
 
         Addlocation1.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {startActivity(new Intent(SetProfile.this,SetProfileLocation.class));
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("geo:47.4925, 19.0513"));
+                Intent chooser = Intent.createChooser(intent, "Launch Map");
+                startActivity(chooser);
+
             }
         });
 
         Addlocation2.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {startActivity(new Intent(SetProfile.this,SetProfileLocation.class));
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("geo:47.4925, 19.0513"));
+                Intent chooser = Intent.createChooser(intent, "Launch Map");
+                startActivity(chooser);
+
             }
         });
 
         Addlocation3.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {startActivity(new Intent(SetProfile.this,SetProfileLocation.class));
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("geo:47.4925, 19.0513"));
+                Intent chooser = Intent.createChooser(intent, "Launch Map");
+                startActivity(chooser);
+
             }
         });
 
         Addlocation4.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {startActivity(new Intent(SetProfile.this,SetProfileLocation.class));
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("geo:47.4925, 19.0513"));
+                Intent chooser = Intent.createChooser(intent, "Launch Map");
+                startActivity(chooser);
+
             }
         });
 
         Addlocation5.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {startActivity(new Intent(SetProfile.this,SetProfileLocation.class));
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("geo:47.4925, 19.0513"));
+                Intent chooser = Intent.createChooser(intent, "Launch Map");
+                startActivity(chooser);
+
             }
         });
 
         Addlocation6.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {startActivity(new Intent(SetProfile.this,SetProfileLocation.class));
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("geo:47.4925, 19.0513"));
+                Intent chooser = Intent.createChooser(intent, "Launch Map");
+                startActivity(chooser);
+
             }
         });
     }
